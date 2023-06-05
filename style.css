@@ -47,6 +47,10 @@ background-color: rgba(255, 255, 255, 0.75) ;
 }
 .menu li{
     width: 25%;
+    border-left: 1px solid #2c71b8;
+}
+.menu li:last-child{
+     border-right: 1px solid  #2c71b8;
 }
 .menu a{
     display: flex;
