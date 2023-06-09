@@ -161,4 +161,31 @@
     clear: both;
     display: table;
   }
-  
+  /* ___________recycle________________________________________________________ */
+.recycle{
+  position: relative;
+  }
+.recycle button{
+  border-style: none;
+  background-color: white;
+  background-image: url("images/shop-blue.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.recycle p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -9px;
+  left: -9px;
+  width: 20px;
+  height: 20px; 
+  border-radius: 10px; 
+  background-color: #2c71b8;
+  color: white;
+  font-size: 12px;
+}
