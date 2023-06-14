@@ -1,0 +1,116 @@
+.Lap-and-Tab-small{
+  text-decoration: underline;
+}
+.Lap-and-Tab-big{
+  font-size: 50px;
+  font-weight: bold;
+  
+}
+
+
+.arrow {
+  background-image: url("images/arrow-down-blue.svg");
+  background-repeat: no-repeat;
+  background-size: 26px;
+  background-position-x: 111px;
+  background-position-y: center;
+}
+.arrow_w {
+  background-image: url("images/arrow-down-white.svg");
+  background-repeat: no-repeat;
+  background-size: 26px;
+  background-position-x: 250px;
+  background-position-y: center;
+}
+
+/*______________________________________________________________________________*/
+.menu  {  
+  display: flex;
+}
+
+.menu li {  /*-------------------- */
+  /*position: relative;*/
+  width: 25%;
+  border-left: 1px solid #2c71b8;
+}
+.menu-sort li {
+  border: 1px solid black;
+  /*position: relative;*/
+  font-size: 30px;
+  padding-left: 30px;
+}
+.menu li:last-child {
+  border-right: 1px solid #2c71b8;
+}
+.menu a {/*------------------------*/
+  display: flex;
+  height: 50px;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+  color: #2c71b8;
+}
+
+.menu-sort a{
+  display: flex;
+  color: white;
+  width: 300px ;
+  text-decoration: none;
+  justify-content: left;
+}
+
+.menu a:hover {
+  background-color: #2c71b8;
+  color: white;
+}
+.menu-sort a:hover {/*------------------------*/
+  background-color: #2c71b8;
+  color: white;}
+
+.prod,.menu-sort-dd {
+    position: relative;
+    list-style-type: none;
+  }
+  /*.menu-sort-dd:hover .submenu-dd {
+    display: block;
+  }
+  .prod:hover .submenu {
+    display: block;
+  }*/
+  .submenu, .submenu-dd {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: -1px;
+    background-color: #2c71b8;
+    color: white;
+    width: 287px;
+    padding: 17.5px 0;
+    
+  }
+  .submenu a,.submenu-dd a {
+    color: white;
+    justify-content: left;
+    height: 40px;
+    padding-left: 30px;
+  }
+  .submenu a:hover {
+    color: #2c71b8;
+    background-color: white;
+  }
+  .submenu-dd a:hover {
+    color: #2c71b8;
+    background-color: white;
+  }
+  .prod:hover .arrow {
+    background-image: url("images/arrow-down-white.svg");
+    background-color: #2c71b8;
+    color: white;
+  }
+  .menu-sort-dd:hover .arrow {
+    background-image: url("images/arrow-down-white.svg");
+    background-color: #2c71b8;
+    color: white;
+  }
+  
