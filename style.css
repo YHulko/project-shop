@@ -23,8 +23,8 @@
     }
     .maim{
       display: flex;
-      flex-direction: column;   
-    }
+      flex-direction: column; 
+         }
     .container-choice{
       width: 250px;
       height: 880px;
