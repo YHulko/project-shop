@@ -82,11 +82,11 @@ label{
 label::before{
   content: "";
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   border: 1px solid white;
   cursor: pointer;
-
+margin: 10px 15px;
 }
 input[type='checkbox']:checked + label::before{
   background-color: white;
@@ -94,6 +94,38 @@ input[type='checkbox']:checked + label::before{
 .filter-DEVICE label { 
   display: flex;
    align-items: center; 
-  margin: 15px 0;
   
-}
+  }
+  .filter-DEVICE{
+    font-size: 20px;
+  }
+  .article-of-filter{
+    font-weight: bold;
+  font-size: 30px;
+  margin: 15px 12px;
+  }
+  .article-of-filter_big{
+    font-weight: bold;
+  font-size: 30px;
+  margin: 40px 12px 30px 12px;
+  }
+  .wrap-divace{
+margin-bottom: 25px;
+  }
+  /*-----------------------show+btn----------------------*/
+  .show-sub a{
+   
+    font-size: 20px;
+   margin:  30px; 
+   text-decoration: none;
+   color: white;
+   }
+  .btn-sbm button{
+      width: 75%;
+      margin: 30px;
+      cursor: pointer;
+      border: 1px solid white;
+      background-color: #2196F3;
+      font-size: 30px;
+      color: white;
+  }
