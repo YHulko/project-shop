@@ -9,13 +9,16 @@ addToCartBtns.forEach((btn) =>
   })
 );
 
-
 let statusLike = document.querySelectorAll(".like");
-console.log(statusLike);/*-знаходить 6 селекторів-*/
+console.log(statusLike); /*-знаходить 6 селекторів-*/
 
-statusLike.forEach((img) => { img.addEventListener("click", 
-function () {let imgSrc = img.src; if (imgSrc === "images/like-white.png") {img.src = "images/like-blue.png";} else { img.src = "images/like-white.png";}}
-
-)});
-  
-   
+statusLike.forEach((img) => {
+  img.addEventListener("click", function () {
+    let imgSrc = img.style.backgroundImage;
+    if (imgSrc === "url('images/like-white.png')") {
+      img.style.backgroundImage = "url('images/like-blue.png')";
+    } else {
+      img.style.backgroundImage = "url('images/like-white.png')";
+    }
+  });
+});
