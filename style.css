@@ -176,9 +176,11 @@ font-size: 18px;
 /*--------------------------------*/
 
  .slick-prev:before, .slick-next:before {
-  font-size: 70px;
+  content: '';
   background-repeat: no-repeat;
- font-family: '';
+ width: 25px;
+ height: 25px;
+ display: block;
 }
 .slick-prev:before{
   background-image: url(images/arrow_left.svg); }
