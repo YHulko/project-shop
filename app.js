@@ -1,7 +1,5 @@
 let productsCountEl = document.getElementById("products-count");
 let addToCartBtns = document.querySelectorAll(".btn-add-to-cart");
-console.log(productsCountEl);
-console.log(addToCartBtns);
 
 addToCartBtns.forEach((btn) =>
   btn.addEventListener("click", function () {
@@ -10,7 +8,6 @@ addToCartBtns.forEach((btn) =>
 );
 
 let statusLike = document.querySelectorAll(".like");
-console.log(statusLike); /*-знаходить 6 селекторів-*/
 
 statusLike.forEach((img) => {
   img.addEventListener("click", function () {
@@ -22,3 +19,26 @@ statusLike.forEach((img) => {
     }
   });
 });
+
+let moreDetailsBtn = document.querySelectorAll(".btn-more-details");
+let Modal = document.querySelector(".modal");
+let btnClose = document.querySelector(".btn-close");
+
+function openModal() {
+  Modal.classList.remove("hide");
+  Modal.classList.add("show");
+}
+function closeModal() {
+  Modal.classList.add("hide");
+  Modal.classList.remove("show");
+}
+moreDetailsBtn.forEach((btn) => btn.addEventListener("click", openModal));
+btnClose.addEventListener("click", closeModal);
+
+Modal.addEventListener("click", function (e) {
+  if (e.target === Modal) {
+    closeModal();
+  }
+});
+//slider
+$(".slider").slick({ dots: true });
