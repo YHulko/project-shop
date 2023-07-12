@@ -44,9 +44,9 @@ Modal.addEventListener("click", function (e) {
 $(".slider").slick({ dots: true });
 
 // oop counter
-let decrementBtns = document.querySelectorAll(".decrement-button")[0];
-let incrementBtns = document.querySelectorAll(".increment-button")[0];
-let inputFields = document.querySelectorAll(".product-quantity input")[0];
+let decrementBtns = document.querySelectorAll(".decrement-button");
+let incrementBtns = document.querySelectorAll(".increment-button");
+let inputFields = document.querySelectorAll(".product-quantity input");
 
 function Counter(incrementBtn, decrementBtn, inputField) {
   this.domRefs = {
@@ -56,15 +56,12 @@ function Counter(incrementBtn, decrementBtn, inputField) {
   };
   this.increment = function () {
     this.domRefs.inputField.value = +this.domRefs.inputField.value + 1;
-    this.toggleButtonState();
+    this.toggleButtonState();}
 
     this.decrement = function () {
       this.domRefs.inputField.value = +this.domRefs.inputField.value - 1;
       this.toggleButtonState();
     };
-
-    let prevCount = +this.domRefs.inputField.value - 1;
-
     this.toggleButtonState = function () {
       let count = this.domRefs.inputField.value;
       this.domRefs.decrementBtn.disabled = count <= 1;
@@ -80,5 +77,5 @@ function Counter(incrementBtn, decrementBtn, inputField) {
       this.decrement.bind(this)
     );
   };
-}
-let counter = new Counter(incrementBtn, decrementBtn, inputField);
+let counter1 = new Counter(incrementBtns, decrementBtns, inputFields);
+

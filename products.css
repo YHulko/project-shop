@@ -88,3 +88,8 @@
   align-self:flex-end;
   top: 50px;
 }
+.product-quantity{
+text-align: center;
+}
+.product-quantity input{
+ width: 100px;}
