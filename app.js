@@ -77,5 +77,11 @@ function Counter(incrementBtn, decrementBtn, inputField) {
       this.decrement.bind(this)
     );
   };
-let counter1 = new Counter(incrementBtns, decrementBtns, inputFields);
-
+//let counter1 = new Counter(incrementBtns, decrementBtns, inputFields);
+for (let i = 0; i < decrementBtns.length; i++) {
+   let counter = new Counter(
+    incrementBtns[i],
+    decrementBtns[i],
+    inputFields[i],
+  );
+}
